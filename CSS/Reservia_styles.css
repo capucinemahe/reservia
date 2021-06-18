@@ -1,0 +1,23 @@
+/* Définition de la police */
+
+@font-face
+{
+  font-family: 'Raleway', sans-serif;
+src:  url('Reservia_juin/Reservia/sources/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+src:  url('Reservia_juin/Reservia/sources/Raleway/Raleway-VariableFont_wght.ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* Elements principaux de la page */
+
+body {
+    background: color: rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: 127px;
+    height: 133px;
+}
