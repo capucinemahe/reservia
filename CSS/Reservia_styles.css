@@ -3,21 +3,159 @@
 @font-face
 {
   font-family: 'Raleway', sans-serif;
-src:  url('Reservia_juin/Reservia/sources/Raleway/Raleway-Italic-VariableFont_wght.ttf');
-src:  url('Reservia_juin/Reservia/sources/Raleway/Raleway-VariableFont_wght.ttf');
-   font-weight: normal;
-   font-style: normal;
+  src : url('CSS/Raleway: static') format('tff');
+  src:  url('CSS/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+  src:  url('CSS/Raleway/Raleway-VariableFont_wght.ttf');
 }
 
 /* Elements principaux de la page */
 
-body {
-    background: color: rgb(255, 255, 255);
+body
+{
+ background-color: white;
+font-family: 'Raleway', sans-serif;
+font-weight: normal; /* bold ou pas */
+font-style: normal; /* italique ou pas */
+color: rgb(0, 0, 0);
+}
+
+.bloc_page
+{
+    width : 1440px;
+    height : 1884px;
+    margin : auto;
+    background: color: rgb(229, 49, 98);
     font-family: 'Raleway', sans-serif;
     color: rgb(0, 0, 0);
 }
 
-img {
-    width: 127px;
-    height: 133px;
+/* Header */
+
+.header
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Logo en haut à gauche */
+.logo
+{
+display: flex;
+height: 30px;
+width:  100px;
+}
+
+/* Menu de navigation en haut à droite */
+.navigation
+{
+display: flex;
+font-family: "Raleway-Regular";
+font-size: 20px;
+}
+
+ul
+{
+list-style: none;
+}
+
+.sinscrire
+{
+color: #0065fc;
+font-weight: bold;
+}
+
+
+/* Modification effet du menu de nav à son survol - exemple */
+
+.navigation a:hover
+{
+  background-color: gold;
+}
+
+
+.effetnav
+{
+display : inline-block;
+width:  300px;
+text-align: right;
+}
+
+
+
+
+.hebergements
+{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+align-content: space-around;
+border-width: 5px 1px 3px 0;
+border-style: solid;
+border-radius: 5px 10px 0 15px;
+background-color: rgb( 239, 239, 239);
+border: 1px solid black;
+padding: 5px; /* Pour éviter que le texte déborde des bordures arrondies */
+}
+
+#titrehebergments
+{
+}
+
+.cannebiere
+{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+align-items: left;
+align-content: space-around;
+border-width: 5px 1px 3px 0;
+border-style: solid;
+border-radius: 10px 10px 10px 10px;
+background-color: rgb( 255, 255, 255);
+border: 1px solid black;
+padding: 5px; /* Pour éviter que le texte déborde des bordures arrondies */
+}
+
+.port
+{
+display: flex;
+width: 246px;
+height: 200px;
+padding: 10px 10px 10px; /* espacements autour du bloc */
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+align-content: space-around;
+}
+
+
+
+img
+{
+    max-width: 10%;
+    height: auto;
+}
+
+exemples :
+
+p
+{
+    width: 350px; /* largeur obligatoire */
+    border: 1px solid black;
+    text-align: justify;
+    padding: 12px; /* Marge intérieure de 12px */
+    margin: auto; /* le bloc va etre centré */
+    margin-bottom: 20px; /* Marge extérieure en bas de 20px */
+    overflow: auto; /* Pour que mon texte ne dépasse pas du bloc */
+}
+
+
+/* ligne bleue au dessus de Hebergements dans ma nav */
+.e1
+{
+    text-decoration: overline;
 }
