@@ -1,0 +1,361 @@
+/* Définition de la police */
+
+@font-face
+{
+  font-family: 'Raleway', sans-serif;
+  src : url('CSS/Raleway: static') format('tff');
+  src:  url('CSS/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+  src:  url('CSS/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+/* Elements principaux de la page */
+
+body
+{
+font-family: 'Raleway', sans-serif;
+font-weight: normal; /* bold ou pas */
+font-style: normal; /* italique ou pas */
+}
+
+
+a  /* pour supprimer le soulignement et la couleur violette des textes cliquables */
+{ 
+text-decoration: none;
+color: black;
+} 
+
+
+/* Header */
+
+#logo_navigation
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: stretch;
+}
+
+.logo
+{
+display: flex;
+height: 30px;
+width:  100px;
+}
+
+#navigation
+{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: stretch;
+font-size: 0.7em;
+}
+
+ul
+{
+list-style: none;
+}
+
+.sinscrire
+{
+color: #0065fc;
+font-weight: bold;
+}
+
+/* Section 1 : Les recherches */
+
+
+.titre1
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+.titre2
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+#bloc-recherche
+{
+  display:  flex;
+}
+
+.info
+{
+font-size: 0.7em;
+}
+
+
+.texte-rechercher
+{
+color: white;
+background-color: #0065fc;
+font-family: "Raleway-Bold" sans-serif;
+border-radius: 0px 5px 5px 0px;
+font-size: 1em;
+padding: 0.5em 1em 0.5em 1em;
+}
+
+
+
+
+
+
+ 
+/* Section 2 : Hébergements à Marseille */
+
+#hebergements-et-pops
+{
+display: flex;
+background-color: white;
+}
+
+
+.bloc-hebergements
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 930px;
+border-width: 5px 5px 5px 5px;
+border-radius: 20px;
+background-color: #f2f2f2;
+}
+
+.titrehebergements
+{
+font-display: flex;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+.vignettehebergement
+{
+display: flex;
+position: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-content: center;
+background: white;
+border-radius: 25px;
+}
+
+.reglagesphotosh
+{
+  display: flex;
+  width: 236px;
+  height: 114px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+  filter: brightness(1.1);
+}
+
+.bannieres-hébergements
+{
+font-family: "Raleway-Regular";
+font-size: 1vw;
+background: white;
+position: absolute;
+text-align: left;
+color: black;
+border-radius: 0px 0px 25px 25px;
+bottom: 0%;
+width: 95%;
+height: 25%;
+line-height: 1.3;
+box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+}
+
+.fa-star
+{
+color: #0065fc;
+font-size: 0.8em;
+}
+
+.afficherplus
+{
+display: flex;
+direction: col;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+/* Les plus populaires */
+
+
+.bloclespops
+{
+display: flex;
+flex-direction: column;
+background-color: #f2f2f2;
+border-radius: 20px;
+margin-left: 2%;
+width: 30%;
+padding: 1.5%;
+}
+
+.fas fa-chart-line
+{
+color: black;
+font-size: 3em;
+}
+
+
+.titrepops
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+
+.vignettepop
+{
+display: flex;
+flex-direction: column;
+align-content: space-around;
+background: white;
+border-radius: 25px;
+}
+
+
+.reglagesphotosp
+{
+  display: flex;
+  width: 127px;
+  height: 133px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 25px 0px 0px 25px;
+  box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+}
+
+.bannierespop
+{
+font-family: "Raleway-Regular";
+font-size: 1em;
+background: white;
+position: absolute;
+text-align: left;
+color: black;
+border-radius: 0px 0px 25px 25px;
+bottom: 0%;
+width: 200px;
+height: 25%;
+padding-left: 5%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+
+.titrevignette
+{
+}
+
+
+.prix
+{
+}
+
+
+.fa-star
+{
+color: #0065fc;
+font-size: 0.8em;
+}
+
+
+
+
+.
+{
+}
+.
+{
+}
+
+
+/* Section 3 : Activités à Marseille */
+
+
+.
+{
+}
+
+
+
+/* FOOTER */
+
+
+#footer
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-content: left;
+background-color: #f2f2f2;
+height: 218px;
+width: auto;
+}
+
+
+
+.apropos
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin: 3em;
+}
+
+
+
+.noshebergements
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin: 3em;
+}
+
+
+.assistance
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin: 3em;
+}
+
+.titref
+{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1.3em;
+}
