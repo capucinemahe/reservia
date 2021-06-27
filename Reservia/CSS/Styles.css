@@ -1,0 +1,448 @@
+@font-face
+{
+font-family: 'Raleway', sans-serif;
+src : url('CSS/Raleway: static') format('tff');
+src:  url('CSS/Raleway/Raleway-Italic-VariableFont_wght.ttf');
+src:  url('CSS/Raleway/Raleway-VariableFont_wght.ttf');
+src:  url('CSS/Raleway/Raleway-Thin.ttf');
+src:  url('CSS/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+/* Elements principaux de la page */
+
+
+body
+{
+font-family: 'Raleway-Regular', sans-serif;
+width: auto;
+height: auto;
+margin-left: 3%;
+margin-right: 3%;
+margin-top: 3%;
+background-color: white;
+}
+
+
+a  /* pour supprimer le soulignement et la couleur violette des textes cliquables */
+{ 
+text-decoration: none;
+color: initial;
+} 
+
+
+/* Header */
+
+#header
+{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+width:  auto;
+height: auto;
+font-family: 'Raleway';
+}
+
+.logo
+{
+display: flex;
+height: 30px;
+width: 100px;
+}
+
+.navigation
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 450px;
+}
+
+.hebergements
+{
+font-size: 1em;
+color: red;
+}
+
+.activites
+{
+color: green;
+font-size: 1em;
+}
+
+.sinscrire
+{
+color: yellow;
+font-size: 1em;
+}
+
+li
+{
+list-style: none;
+}
+
+
+
+/* Section 1 : Les recherches */
+
+
+.titre1
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+.titre2
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+#bloc-recherche
+{
+  display:  flex;
+}
+
+.info
+{
+font-size: 0.7em;
+}
+
+
+.texte-rechercher
+{
+color: white;
+background-color: #0065fc;
+font-family: "Raleway-Bold" sans-serif;
+border-radius: 0px 5px 5px 0px;
+font-size: 1em;
+padding: 0.5em 1em 0.5em 1em;
+}
+
+
+ 
+/* Section 2 : Hébergements à Marseille */
+
+#hebergements-et-pops
+{
+display: flex;
+flex-direction: row;
+background-color: white;
+}
+
+.bloc-hebergements
+{
+width: 60%;
+height: 900px;
+margin-left: 10px;
+margin-right: 5px;
+padding: 2%;
+border-radius: 20px;
+background-color: rgb(239, 239, 239);
+}
+
+
+
+.titrehebergements
+{
+font-family: "Raleway-Bold";
+font-size: 1em;
+}
+
+.ligne1
+{
+display: flex;
+flex-direction: row;
+}
+
+.vignettehebergement
+{
+display: flex;
+justify-content: space-between;
+margin: 5px;
+align-content: flex-start;
+border-width: 5px;
+border-color: white;
+background: white;
+border-radius: 20px;
+width: 50%;
+height: 200px;
+}
+
+
+.reglagesphotosh
+{
+
+  width: 236px;
+  height: 114px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+  filter: brightness(1.1);
+}
+
+
+.souslaphoto
+{
+font-family: Raleway;
+font-size: 1em;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+background: white;
+position: absolute;
+margin-top: -5px;
+border-radius: 0px 0px 25px 25px;
+}
+
+
+h3
+{
+font-family: Raleway;
+font-size: 1em;
+font-style: italic;
+}
+
+.prix
+{
+font-family: Raleway;
+font-size: 0.8em;
+font-style: italic;
+}
+
+.star
+{
+color: #0065fc;
+font-size: 0.8em;
+}
+
+.ligne2
+{
+display: flex;
+flex-direction: row;
+}
+
+
+.afficherplus
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1.2em;
+margin-bottom: 15px;
+}
+
+/* Les plus populaires */
+
+
+.bloc-lespops
+{
+display: flex;
+flex: 1;
+width: 30%;
+height: 900px;
+margin-right: 15px;
+margin-left: 10px;
+padding: 1%;
+border-radius: 20px;
+background-color: rgb(239, 239, 239);
+}
+
+.fa-chart-line
+{
+color: black;
+font-size: 3em;
+}
+
+
+.titrepops
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+
+.vignettepop
+{
+
+background: white;
+border-radius: 25px;
+}
+
+
+.reglagesphotosp
+{
+  display: flex;
+  width: 127px;
+  height: 133px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 25px 0px 0px 25px;
+  box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+}
+
+.bannierespop
+{
+font-family: "Raleway-Regular";
+font-size: 1em;
+background: white;
+
+color: black;
+border-radius: 0px 0px 25px 25px;
+bottom: 0%;
+width: 200px;
+height: 25%;
+padding-left: 5%;
+padding-top: 1%;
+padding-bottom: 1%;
+}
+
+
+.titrevignette
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+.prix
+{
+font-family: Raleway-ExtraLight.ttf, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+.fa-star
+{
+color: #0065fc;
+font-size: 0.8em;
+}
+
+
+
+
+/* Section 3 : Activités à Marseille */
+
+
+#activites
+{
+background-color: white;
+border-radius: 20px;
+margin-left: 2%;
+width: 100%;
+padding: 1.5%;
+}
+
+.titreactivites
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+}
+
+.conteneur2
+{
+display: flex;
+flex-direction: row;
+}
+
+.vignetteactivites
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+.reglagesphotosa
+{
+display: flex;
+width: 127px;
+height: 133px;
+object-fit: cover;
+border-style: solid;
+border-width: 5px;
+border-color: white;
+border-radius: 25px 0px 0px 25px;
+box-shadow: 0px 0px 10px 2px rgba(187, 184, 184, 0.3);
+}
+
+
+.titrevignette
+{
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 0.7em;
+}
+
+
+
+/* FOOTER */
+
+
+.footer
+{
+background-color: #f2f2f2;
+height: 220px;
+margin-top: 60px;
+width: auto;
+}
+
+.blocfooter
+{
+
+height: 150px;
+margin-top: 60px;
+width: auto;
+}
+
+
+.apropos
+{
+
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin-left: 15%;
+}
+
+
+
+.noshebergements
+{
+
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin-left: 15%;
+}
+
+
+.assistance
+{
+
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1em;
+margin-right: 30%;
+}
+
+.titref
+{
+
+font-family: Raleway, sans-serif;
+color: black;
+font-size: 1.3em;
+}
+
+
