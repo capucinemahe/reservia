@@ -3,19 +3,17 @@
         <head>
             <meta charset="utf-8"/>
             <meta name="description" content="Bienvenue sur Réservia"/>
-    <!-- CSS -->
+    <!-- mon fichier CSS -->
             <link rel="stylesheet" type="text/css" href="CSS/styles.css" media="all"/>
     <!-- police -->
-            <link href="https://fonts.google.com/specimen/Raleway?query=raleway#standard-styles" rel="CSS/Raleway" type="text/css">
+            <link href="https://fonts.google.com/specimen/Raleway?query=raleway#standard-styles" rel="CSS/Raleway" type="text/css"/>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
+<title>Reservia</title>
 
-        <title>Reservia</title>
-
-        </head>
-        
-    <body>
+</head>
+ <body>
 
 <!-- Header -->
 
@@ -41,28 +39,26 @@
 
 <section class="research">
 
-<header>
     <h1 class="titre1"> Trouver votre hébergement pour des vacances de rêve </h1>
     <h2 class="titre2"> En plein centre ville ou en pleine nature </h2>
-</header>
-
 
     <form>
         <span class="localisation"><i class="fas fa-map-marker-alt"></span>
             <input class="barre-recherche" type="search" name="Barre de recherche" placeholder="Marseille, France">
-            <button><i class="fas fa-search"></i><span class="searchFormButton">Rechercher</span></button>
+            <button><i class="fas fa-search"></i><span class="boutonloupe">Rechercher</span></button>
     </form>
 
 <!-- manque les filtres, les mettre dans un div, puis chacune dans un div avec son titre et son icone qui sera un i, avec les icones alignées, + flex  -->
+
 <div class="filtres">
-   <h2 class="filtres"> Filtres </h2>
-  
+   <h2 class="titrefiltres"> Filtres </h2>
 </div>
 
-    <div>
+  <div>
         <!-- ajouter icone i qui sera aussi dans un div -->
    <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
   </div>
+
 </section>
 
 
@@ -71,7 +67,7 @@
 <section id="hebergements-et-pops">
 
   <div class="bloc-hebergements">
-   <h1 class="titrehebergements">Hébergements à Marseille </h1>
+   <h2 class="titrehebergements">Hébergements à Marseille </h2>
 
           <!-- Les 6 hébergements -->
 
@@ -209,13 +205,13 @@
       <a href="#"> <h2 class="afficherplus">Afficher plus</h2> </a>
 </div>
 
-</div>    <!-- fermeture bloc hébergements -->
+</div>    <!-- fermeture de bloc-hebergements -->
 
 
 
       <!-- Bloc : Les plus populaires -->
 
-<aside class="bloc-lespops">
+<div class="bloc-lespops">
     <h1 class="titrepops"><Les plus populaires><i class="fas fa-chart-line"></i></h1>
 
 
@@ -271,10 +267,7 @@
      </a>
 </div>
 
-
-
-
- </aside>
+</div>
  
 </section> <!-- fermeture de la section 2 : Hébergements et populaires -->
 
