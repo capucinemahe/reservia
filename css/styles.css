@@ -29,7 +29,6 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	height: 100%;
 	margin-left: 2%;
 	margin-right: 2%;
-	font-family: 'Raleway', sans-serif;
 }
 
 .logo
@@ -53,7 +52,6 @@ nav ul
 	border-top: solid 2px;
 	border-color: transparent;
 	padding: 15px;
-	borde
 }
 
 
@@ -91,9 +89,8 @@ li
 
 /* Section 1 : Les recherches */
 
-.research
+#research
 {
-	font-family: 'Raleway', sans-serif;
 	margin-left: 2%;
 }
 
@@ -109,6 +106,60 @@ li
 	color: black;
 	font-size: 0.7em;
 }
+
+.researchcity
+{
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0 20px 0;
+	width: 400px;
+}
+
+.mapmarker
+{
+
+}
+
+
+
+
+.button
+{
+	background-color: #0065FC;
+	width: 125px;
+	height: 40px;
+	border-radius: 0 10px 10px 0;
+	color: white;
+	border-style: none;
+	cursor: pointer;
+}
+
+
+
+
+.titrefiltres
+{
+	font-size: 0.9em;
+}
+
+#eco
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    height: 50px;
+    border-top: 2.5px solid #F2F2F2;
+    border-right: 2.5px solid #F2F2F2;
+    border-bottom: 2.5px solid #F2F2F2;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
 
 .info
 {
@@ -127,6 +178,7 @@ li
 	height: 680px;
 	margin-left: 2%;
 	margin-right: 2%;
+	margin-top: 30px;
 }
 
 .bloc-hebergements
@@ -144,7 +196,6 @@ li
 
 .titrehebergements
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em;
 	margin: -8px;
 	margin-left: 15px;
@@ -155,8 +206,8 @@ li
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-bottom: 20px;
-	margin-top: -5px;
+	margin-bottom: 30px;
+	margin-top: 10px;
 }
 
 .vignettehebergement1
@@ -170,12 +221,12 @@ li
 
 .vignettehebergement1:hover
 {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .reglagesphotosh
@@ -195,7 +246,6 @@ li
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	background: white;
 	border-radius: 0px 0px 25px 25px;
@@ -206,14 +256,12 @@ li
 
 h3
 {
-	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 1em;
 }
 
 .prix
 {
-	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 1em;
 }
@@ -236,7 +284,7 @@ h3
 	flex-direction: row;
 	justify-content: space-around;
 	margin-bottom: 20px;
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 
@@ -251,19 +299,18 @@ h3
 
 .vignettehebergement2:hover
 {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .afficherplus
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1.1em;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	margin-left: 20px;
 }
 
@@ -295,7 +342,6 @@ h3
 
 .titrep
 {
-	font-family: 'Raleway', sans-serif;
 	color: black;
 	font-size: 0.9em;
 	margin-left: 5px;
@@ -307,8 +353,6 @@ h3
 	font-size: 1.3em;
 }
 
-
-
 .colonne1
 {
 	display: flex;
@@ -316,7 +360,6 @@ h3
 	justify-content: space-between;
 	margin-top: -15px;
 }
-
 
 .vignettepop
 {
@@ -332,12 +375,12 @@ h3
 
 .vignettepop:hover
 {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .reglagesphotosp
@@ -357,21 +400,11 @@ h3
 {
 	display: flex;
 	flex-direction: column;
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	background: white;
 	border-radius: 0px 0px 25px 25px;
 	padding-left: 15px;
 }
-
-
-h3
-{
-	font-family: Raleway, sans-serif;
-	font-weight: bold;
-	font-size: 1em;
-}
-
 
 .prix
 {
@@ -387,9 +420,6 @@ h3
 	font-size: 0.8em;
 	padding-bottom: -10px;
 }
-
-
-
 
 
 /* Section 3 : Activités à Marseille */
@@ -408,7 +438,6 @@ h3
 
 .titreactivites
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em;
 	margin-left: 35px;
 	margin-top: 60px;
@@ -447,7 +476,6 @@ h3
 
 .titrea
 {
-	font-family: Raleway, sans-serif;
 	font-weight: bold;
 	font-size: 1em;
 	margin-left: 10px;
@@ -461,6 +489,7 @@ h3
 	height: 235px;
 	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
 }
+
 .reglagesphotosa2
 {
 	width: 300px;
@@ -489,7 +518,6 @@ h3
 	border-radius: 25px 25px 0px 0px;
 }
 
-
 .vignettea4
 {
 	background: white;
@@ -498,7 +526,6 @@ h3
 	height: 450px;
 	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
 }
-
 
 .reglagesphotosa4
 {
@@ -572,7 +599,6 @@ ul
 }
 
 
-
 .apropos
 {
 	font-family: 'Raleway', sans-serif;
@@ -585,7 +611,7 @@ ul
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	padding: 50px;
-	margin-left: 50px;
+	margin-left: 125px;
 }
 
 .assistance
@@ -593,7 +619,7 @@ ul
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	padding: 50px;
-	margin-left: 50px;
+	margin-left: 160px;
 }	
 
 .titref
@@ -604,7 +630,6 @@ ul
 
 li
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	font-weight: 200;
 	line-height : 2;
