@@ -3,7 +3,7 @@
 
 body
 {
-	width: 1440px;
+	width: 90rem;
 	height: auto;
 	background-color: white;
 	font-family: 'Raleway', sans-serif;
@@ -23,19 +23,20 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-between;
-	width:  100%;
-	height: 100%;
-	margin-left: 2%;
-	margin-right: 2%;
+	width: 100%;
+	height: 6rem;
+	/* margin-left: 2%;
+	margin-right: 2%; */
 }
 
 .logo
 {
 	display: flex;
-	height: 50px;
-	width: 130px;
+	height: 3.2rem;
+	width: 8.2rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .navigation
@@ -43,41 +44,46 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	width: 450px;
-}
-
-
-nav ul
-{
-	border-top: solid 2px;
-	border-color: transparent;
-	padding: 15px;
-}
-
-
-nav ul :hover
-{
-	border-top: solid 2px;
-	border-color: #0065fc;
+	width: 28rem;
+	/* border-top: solid 0.15rem transparent;
+	padding-top: 1.3rem; */
 }
 
 
 .hebergements
 {
-	font-size: 1em;
+	font-size: 1rem;
 	width: 40%;
 }
 
+
+.hebergements:hover
+{
+	border-top: solid 0.15rem rgb(6, 72, 250);
+padding-top: 3rem;
+}
+
+
+
 .activites
 {
-	font-size: 1em;
+	font-size: 1rem;
 	width: 30%;
+}
+
+
+.activites:hover
+{
+	border-top: solid 0.15rem rgb(6, 72, 250); 
+	/* padding-top: 2rem; */
+	/* border-width: 2rem; */
 }
 
 .sinscrire
 {
-	font-size: 1em;
+	font-size: 1rem;
 	width: 30%;
+	color: rgb(6, 72, 250);
 }
 
 li
@@ -98,73 +104,147 @@ li
 .titre1
 {
 	color: black;
-	font-size: 1em;
+	font-size: 1.3rem;
 }
 
 .titre2
 {
 	color: black;
-	font-size: 0.7em;
+	font-size: 0.9rem;
+	font-weight: 300;
+	margin-top: -0.8rem;
 }
+
+/* partie recherche en fonction de la ville */
 
 .researchcity
 {
 	display: flex;
 	flex-direction: row;
-	margin: 20px 0 20px 0;
-	width: 400px;
+	margin: 1.25rem 0 1.25rem 0;
+	width: 28rem;
 }
 
 .mapmarker
 {
-
+	background-color: rgb(235, 235, 235);
+	border-radius: 0.625rem 0 0 0.625rem;
+	border-style: none;
+	cursor: pointer;
+	padding: 0.6rem 1rem 0.6rem 1rem;
+	text-align: center;
 }
 
 
+.researchinput
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: black;
+	border-top: 0.1rem solid rgb(208, 208, 208);
+	border-bottom: 0.1rem solid rgb(208, 208, 208);
+	border-right: 0.15rem solid transparent;
+	border-left: 0.15rem solid transparent;
+	padding-left: 0.8rem;
+}
+
+.researchinput::placeholder
+{
+	color: black;
+}
 
 
 .button
 {
-	background-color: #0065FC;
-	width: 125px;
-	height: 40px;
-	border-radius: 0 10px 10px 0;
+	background-color: rgb(6, 72, 250);
+	border-radius: 0 0.625rem 0.625rem 0;
+	width: 7.8rem;
+	height: 3rem;
 	color: white;
 	border-style: none;
 	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 }
 
 
 
+/* partie recherche en fonction de filtres */
 
-.titrefiltres
+
+.filters
 {
-	font-size: 0.9em;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	align-content: center;
+	margin-top: 2rem;
 }
 
-#eco
+.titrefilters
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 25px;
-    height: 50px;
-    border-top: 2.5px solid #F2F2F2;
-    border-right: 2.5px solid #F2F2F2;
-    border-bottom: 2.5px solid #F2F2F2;
-    border-radius: 25px;
-    cursor: pointer;
-    background-color: white;
+	font-size: 1rem;
+	margin-right: 2rem;
+	/* margin-top: -0.2rem; */
 }
 
-
-
-
-
-.info
+.filters div
 {
-	font-size: 0.7em;
+	display: flex;
+	align-items: center;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+	border: 0.1rem solid rgb(235, 235, 235);
+	border-radius: 2rem;
+	cursor: pointer;
+	font-weight: bold;
+	padding-right: 1rem;
+	font-size: 1rem;
 }
+
+.filters div:hover
+{
+	background-color: rgb(235, 235, 235);
+}
+
+.filters i 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(6, 72, 250);
+	background-color: rgb(215, 229, 254);
+	border-radius: 100%;
+	height: 3rem;
+	width: 3rem;
+	margin-right: 0.8rem;
+}
+
+
+.informations
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+	font-size: 0.8em;
+}
+
+.iconei
+{
+	border-style: solid 0.15rem rgb(235, 235, 235);
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: white;
+	padding: 1rem;
+}
+
+.dispos
+{
+	font-size: 1em;
+}
+
+
 
 
 /* Section 2 : Hébergements à Marseille */
@@ -174,11 +254,11 @@ li
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	width: 1440px;
-	height: 680px;
+	width: 100%
+	height: 42.5rem;
 	margin-left: 2%;
 	margin-right: 2%;
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 .bloc-hebergements
@@ -186,10 +266,10 @@ li
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 880px;
-	height: 625px;
-	padding: 30px;
-	border-radius: 20px;
+	width: 55rem;
+	height: 39rem;
+	padding: 1.875rem;
+	border-radius: 1.25rem;
 	background-color: rgb(239, 239, 239);
 }
 
@@ -197,8 +277,9 @@ li
 .titrehebergements
 {
 	font-size: 1.3em;
-	margin: -8px;
-	margin-left: 15px;
+	/* margin: -0.5rem; */
+	margin-left: 1rem;
+	margin-top: 0.6rem;
 }
 
 .ligne1
@@ -206,17 +287,17 @@ li
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-bottom: 30px;
-	margin-top: 10px;
+	margin-bottom: 2rem;
+	margin-top: 0.625rem;
 }
 
 .vignettehebergement1
 {
 	background: white;
-	border-radius: 20px;
-	width: 250px;
-	height: 200px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
+	border-radius: 1.25rem;
+	width: 15.625rem;
+	height: 12.5rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
 .vignettehebergement1:hover
@@ -231,13 +312,13 @@ li
 
 .reglagesphotosh
 {
-	width: 240px;
-	height: 120px;
+	width: 15rem;
+	height: 7.5rem;
 	object-fit: cover;
 	border-style: solid;
-	border-width: 5px;
+	border-width: 0.3rem;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.56rem 1.56rem 0rem 0rem;
 }
 
 
@@ -248,9 +329,10 @@ li
 	justify-content: flex-start;
 	font-size: 1em;
 	background: white;
-	border-radius: 0px 0px 25px 25px;
-	padding-left: 15px;
-	padding-bottom: 15px;
+	border-radius: 0rem 0rem 1.56rem 1.56rem;
+	padding-left: 0.95rem;
+	padding-bottom: 0.95rem;
+	margin-top: -0.8rem;
 }
 
 
@@ -262,7 +344,6 @@ h3
 
 .prix
 {
-	font-weight: 200;
 	font-size: 1em;
 }
 
@@ -283,18 +364,18 @@ h3
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 1.25rem;
+	margin-top: 1.25rem;
 }
 
 
 .vignettehebergement2
 {
 	background: white;
-	border-radius: 20px;
-	width: 250px;
-	height: 200px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
+	border-radius: 1.25rem;
+	width: 15.5rem;
+	height: 12.5rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
 .vignettehebergement2:hover
@@ -310,8 +391,9 @@ h3
 .afficherplus
 {
 	font-size: 1.1em;
-	margin-bottom: 10px;
-	margin-left: 20px;
+	margin-bottom: 0.7rem;
+	margin-left: 1.25rem;
+	margin-top: 1.5rem;
 }
 
 
@@ -323,10 +405,10 @@ h3
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 625px;
-	padding: 30px;
-	margin-left: 25px;
-	border-radius: 20px;
+	height: 39rem;
+	padding: 1.9rem;
+	margin-left: 1.5rem;
+	border-radius: 1.25rem;
 	background-color: rgb(239, 239, 239);
 }
 
@@ -337,14 +419,15 @@ h3
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
-	margin-top: -20px;
+	margin-top: -1.25rem;
 }
 
 .titrep
 {
 	color: black;
 	font-size: 0.9em;
-	margin-left: 5px;
+	margin-left: 0.3rem;
+	margin-top: 0.6rem;
 }
 
 .fa-chart-line
@@ -358,19 +441,19 @@ h3
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: -15px;
+	margin-top: -0.7rem;
 }
 
 .vignettepop
 {
 	display: flex;
 	background: white;
-	border-radius: 20px;
-	width: 345px;
-	height: 145px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
-	margin-top: 30px;
-	margin-bottom: 30px;
+	border-radius: 1.25rem;
+	width: 21.5rem;
+	height: 9rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
+	margin-top: 1.7rem;
+	margin-bottom: 1.7rem;
 }
 
 .vignettepop:hover
@@ -386,13 +469,13 @@ h3
 .reglagesphotosp
 {
 	float: left;
-	width: 130px;
-	height: 135px;
+	width: 8.125rem;
+	height: 8.44rem;
 	object-fit: cover;
 	border-style: solid;
-	border-width: 5px;
+	border-width: 0.3rem;
 	border-color: white;
-	border-radius: 25px 0px 0px 25px;
+	border-radius: 1.5rem 0rem 0rem 1.5rem;
 }
 
 
@@ -402,15 +485,15 @@ h3
 	flex-direction: column;
 	font-size: 1em;
 	background: white;
-	border-radius: 0px 0px 25px 25px;
-	padding-left: 15px;
+	border-radius: 0rem 0rem 1.7rem 1.7rem;
+	padding-left: 0.94rem;
 }
 
 .prix
 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	margin-top: -5px;
+	margin-top: -0.3rem;
 }
 
 
@@ -418,7 +501,7 @@ h3
 {
 	color: #0065fc;
 	font-size: 0.8em;
-	padding-bottom: -10px;
+	padding-bottom: -0.625rem;
 }
 
 
@@ -432,16 +515,16 @@ h3
 	justify-content: space-between;
 	background-color: white;
 	width: 100%;
-	height: 600px;
-	margin-top: 40px;
+	height: 37.5rem;
+	margin-top: 2.5rem;
 }
 
 .titreactivites
 {
 	font-size: 1.3em;
-	margin-left: 35px;
-	margin-top: 60px;
-	margin-bottom: -10px;
+	margin-left: 2.2rem;
+	margin-top: 3.76rem;
+	margin-bottom: -0.625rem;
 }
 
 
@@ -450,130 +533,131 @@ h3
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 30px;
+	padding: 1.875rem;
 }
 
 
 .vignettea1
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 450px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
-	margin-top: 15px;
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 28.125rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
+	margin-top: 0.94rem;
 }
+
 
 
 .reglagesphotosa1
 {
-	width: 300px;
-	height: 390px;
+	width: 18.75rem;
+	height: 24.4rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .titrea
 {
 	font-weight: bold;
 	font-size: 1em;
-	margin-left: 10px;
+	margin-left: 0.625rem;
 }
 
 .vignettea2
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 235px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 14.7rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
 .reglagesphotosa2
 {
-	width: 300px;
-	height: 180px;
+	width: 18.75rem;
+	height: 11.25rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .vignettea3
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 165px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230);
-	margin-top: 50px;
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 10.3rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230);
+	margin-top: 3.125rem;
 }
 
 .reglagesphotosa3
 {
-	width: 300px;
-	height: 110px;
+	width: 18.75rem;
+	height: 6.875rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .vignettea4
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 450px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 28.125rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
 .reglagesphotosa4
 {
-	width: 300px;
-	height: 390px;
+	width: 18.75rem;
+	height: 24.375rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 
 .vignettea5
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 195px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230); 
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 12.2rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
 
 .reglagesphotosa5
 {
-	width: 300px;
-	height: 140px;
+	width: 18.75rem;
+	height: 8.75rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .vignettea6
 {
 	background: white;
-	border-radius: 20px;
-	width: 300px;
-	height: 210px;
-	box-shadow: 5px 5px 5px rgb(230, 230, 230);
-	margin-top: 45px;
+	border-radius: 1.25rem;
+	width: 18.75rem;
+	height: 13.125rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230);
+	margin-top: 2.8rem;
 }
 
 
 .reglagesphotosa6
 {
-	width: 300px;
-	height: 160px;
+	width: 18.75rem;
+	height: 10rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 25px 25px 0px 0px;
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 
@@ -589,7 +673,7 @@ h3
 	flex-direction: row;
 	justify-content: flex-start;
 	width: 100%;
-	height: 220px;
+	height: 13.75rem;
 	background-color: rgb(239, 239, 239);
 }
 
@@ -601,36 +685,30 @@ ul
 
 .apropos
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	padding: 50px;
+	padding: 3.125rem;
 }
 
 .noshebergements
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	padding: 50px;
-	margin-left: 125px;
+	padding: 3.125rem;
+	margin-left: 7.8rem;
 }
 
 .assistance
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	padding: 50px;
-	margin-left: 160px;
+	padding: 3.125rem;
+	margin-left: 10rem;
 }	
 
 .titref
 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 1.3em;
 }
 
 li
 {
 	font-size: 1em;
-	font-weight: 200;
-	line-height : 2;
 }
