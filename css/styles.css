@@ -17,6 +17,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 } 
 
 
+
 /* Header */
 
 #header
@@ -26,8 +27,6 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	justify-content: space-between;
 	width: 100%;
 	height: 6rem;
-	/* margin-left: 2%;
-	margin-right: 2%; */
 }
 
 .logo
@@ -45,10 +44,8 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 28rem;
-	/* border-top: solid 0.15rem transparent;
-	padding-top: 1.3rem; */
+	padding-top: 2.5rem;
 }
-
 
 .hebergements
 {
@@ -56,13 +53,11 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	width: 40%;
 }
 
-
 .hebergements:hover
 {
 	border-top: solid 0.15rem rgb(6, 72, 250);
-padding-top: 3rem;
+	padding-top: 2.5rem;
 }
-
 
 
 .activites
@@ -71,12 +66,10 @@ padding-top: 3rem;
 	width: 30%;
 }
 
-
 .activites:hover
 {
 	border-top: solid 0.15rem rgb(6, 72, 250); 
-	/* padding-top: 2rem; */
-	/* border-width: 2rem; */
+	padding-top: 2.5rem; 
 }
 
 .sinscrire
@@ -125,13 +118,13 @@ li
 	width: 28rem;
 }
 
-.mapmarker
+.researchcity i
 {
 	background-color: rgb(235, 235, 235);
 	border-radius: 0.625rem 0 0 0.625rem;
 	border-style: none;
 	cursor: pointer;
-	padding: 0.6rem 1rem 0.6rem 1rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -148,7 +141,7 @@ li
 	padding-left: 0.8rem;
 }
 
-.researchinput::placeholder
+.researchinput:placeholder
 {
 	color: black;
 }
@@ -167,6 +160,10 @@ li
 	font-weight: bold;
 }
 
+.button i
+{
+	visibility: hidden;
+}
 
 
 /* partie recherche en fonction de filtres */
@@ -185,7 +182,6 @@ li
 {
 	font-size: 1rem;
 	margin-right: 2rem;
-	/* margin-top: -0.2rem; */
 }
 
 .filters div
@@ -232,7 +228,9 @@ li
 
 .iconei
 {
-	border-style: solid 0.15rem rgb(235, 235, 235);
+	color: rgb(6, 72, 250);
+	border-style: solid 1rem;
+	border-color: black;
 	border-radius: 100%;
 	cursor: pointer;
 	background-color: white;
@@ -254,7 +252,7 @@ li
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	width: 100%
+	width: 100%;
 	height: 42.5rem;
 	margin-left: 2%;
 	margin-right: 2%;
@@ -277,7 +275,6 @@ li
 .titrehebergements
 {
 	font-size: 1.3em;
-	/* margin: -0.5rem; */
 	margin-left: 1rem;
 	margin-top: 0.6rem;
 }
@@ -547,6 +544,15 @@ h3
 	margin-top: 0.94rem;
 }
 
+.vignettea1:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
 
 
 .reglagesphotosa1
@@ -574,6 +580,16 @@ h3
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
+.vignettea2:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
 .reglagesphotosa2
 {
 	width: 18.75rem;
@@ -593,6 +609,16 @@ h3
 	margin-top: 3.125rem;
 }
 
+.vignettea3:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
 .reglagesphotosa3
 {
 	width: 18.75rem;
@@ -609,6 +635,16 @@ h3
 	width: 18.75rem;
 	height: 28.125rem;
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
+}
+
+.vignettea4:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 .reglagesphotosa4
@@ -630,6 +666,16 @@ h3
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
 }
 
+.vignettea5:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
 
 .reglagesphotosa5
 {
@@ -648,6 +694,16 @@ h3
 	height: 13.125rem;
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230);
 	margin-top: 2.8rem;
+}
+
+.vignettea6:hover
+{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
 }
 
 
@@ -686,21 +742,25 @@ ul
 .apropos
 {
 	font-size: 1em;
-	padding: 3.125rem;
+	padding: 3rem;
+	margin-top: -2rem;
 }
 
 .noshebergements
 {
 	font-size: 1em;
-	padding: 3.125rem;
+	padding: 3rem;
 	margin-left: 7.8rem;
+	margin-top: -2rem;
+
 }
 
 .assistance
 {
 	font-size: 1em;
-	padding: 3.125rem;
+	padding: 3rem;
 	margin-left: 10rem;
+	margin-top: -2rem;
 }	
 
 .titref
@@ -711,4 +771,277 @@ ul
 li
 {
 	font-size: 1em;
+	line-height: 2rem;
 }
+
+
+
+
+
+/* nouvelles règles si mon site est consulté sur un écran de smartphone */
+
+@media screen and (max-width: 375px) {
+
+	body
+	{
+		width: 23.4rem;
+		height: auto;
+	}
+
+	/* HEADER */
+
+	#header :
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.logo
+	{
+		height: 3rem;
+		width: 8rem;
+		margin-left: 0.7rem;
+		margin-top: 1rem;
+	}
+
+	.navigation
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+	}
+
+	.hebergements
+	{
+		order: 2;
+		padding: 1rem;
+	}
+
+	.activites
+	{
+		order: 3;
+	}
+	
+	.sinscrire
+	{
+		order: 1;
+	}
+
+
+
+	/* Section 1 */
+
+#research
+{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+	.titre1
+	{
+		font-size: 1.4rem;
+	}
+	.titre2
+	{
+		font-weight: 200;
+		font-size: 1rem;
+		padding-top: 0.4rem;
+		padding-bottom: 1rem;
+	}
+
+	/* Recherche en fonction de la ville */
+
+	.researchinput
+	{
+		width: 12rem;
+		font-size: 1rem;
+	}
+
+	.button
+	{
+		visibility: hidden;
+	}
+
+	.button i
+	{
+		visibility: visible;
+		background-color: rgb(6, 72, 250);
+		border-radius: 0 0.625rem 0.625rem 0;
+		color: white;
+		border-style: none;
+		cursor: pointer;
+		width: 1rem;
+		height: 1rem;
+	}
+
+
+	/* partie recherche en fonction de filtres */
+
+	.filters
+	{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.titrefilters
+	{
+		font-size: 1.3rem;
+	}
+
+	.dispos
+	{
+		font-size: 1.4em;
+		font-weight: 200;
+	}
+
+
+
+	/* Les plus populaires */
+
+	.bloc-lespops
+	{
+		width: 23.4rem;
+		height: 36.25rem;
+		order: 1;
+		padding: 2rem;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	.vignettepop
+	{
+		width: 23rem;
+		height: 9rem;
+	}
+
+
+
+	/* Section 2 : Hébergements à Marseille */
+
+	#hebergements-et-pops
+	{
+		flex-wrap: wrap;
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+		margin: 0;
+	}
+
+	.bloc-hebergements
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		border-radius: 0;
+		background-color: white;
+		order: 2;
+	}
+
+	.titrehebergements
+	{
+		margin-top: 2rem;
+	}
+
+	.ligne1
+	{
+		display: block;
+		margin-top: 0.625rem;
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.ligne2
+	{
+		display: block;
+		margin-top: 0.625rem;
+		width: 100%;
+		height: auto;
+	}
+
+	.vignettehebergement1, .vignettehebergement2
+	{
+		width: 20.9rem;
+		height: 12.5rem;
+		padding: 1rem;
+	}
+
+	.reglagesphotosh
+	{
+		width: 20rem;
+		height: 7.5rem;
+	}
+
+.afficherplus
+{
+	margin-bottom: 2rem;
+}
+
+
+
+	/* Section 3 : Activités à Marseille */
+
+	#activites
+	{
+		margin-top: 1rem;
+		height: auto;
+	}
+
+	.titreactivites
+	{
+		margin: 1rem;
+	}
+
+
+	.lignevignettes
+	{
+		flex-direction: column;
+		align-items: baseline;
+
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.vignettea1, .vignettea2, .vignettea3, .vignettea4, .vignettea5, .vignettea6
+	{
+		width: 21rem;
+		height: 11.8rem;
+		margin-bottom: 1.3rem;
+	}
+
+.reglagesphotosa1, .reglagesphotosa2, .reglagesphotosa3, .reglagesphotosa4, .reglagesphotosa5, .reglagesphotosa6
+{
+	width: 20rem;
+	height: 8rem;
+}
+
+
+
+
+
+
+
+	/* FOOTER */
+
+	#blocfooter
+	{
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+
+
+}
+
+
+
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+
+
