@@ -44,39 +44,36 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 28rem;
-	padding-top: 2.5rem;
+	padding-top: 2rem;
 }
 
-.hebergements
+.navigation a
 {
 	font-size: 1rem;
-	width: 40%;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	/* width: 60%;*/
 }
 
-.hebergements:hover
+.hebergements:hover, .activites:hover
 {
 	border-top: solid 0.15rem rgb(6, 72, 250);
 	padding-top: 2.5rem;
-}
-
-
-.activites
-{
-	font-size: 1rem;
-	width: 30%;
-}
-
-.activites:hover
-{
-	border-top: solid 0.15rem rgb(6, 72, 250); 
-	padding-top: 2.5rem; 
+	color: rgb(6, 72, 250);
 }
 
 .sinscrire
 {
 	font-size: 1rem;
+	font-weight: bold;
 	width: 30%;
 	color: rgb(6, 72, 250);
+	padding-right: 2rem;
+}
+
+.sinscrire:hover
+{
+	border-color: transparent;
 }
 
 li
@@ -158,6 +155,7 @@ li
 	cursor: pointer;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
+	padding-top: 0.9rem;
 }
 
 .button i
@@ -222,24 +220,31 @@ li
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: baseline;
+	align-items: center;
 	font-size: 0.8em;
 }
 
 .iconei
 {
-	color: rgb(6, 72, 250);
-	border-style: solid 1rem;
-	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 1.6rem;
+	width: 1.6rem;
+	border: solid 0.1rem rgb(212, 212, 212);
 	border-radius: 100%;
+}
+
+.informations i
+{
+	color: rgb(6, 72, 250);
 	cursor: pointer;
-	background-color: white;
-	padding: 1rem;
 }
 
 .dispos
 {
 	font-size: 1em;
+	margin-left: 0.8rem;
 }
 
 
@@ -554,7 +559,6 @@ h3
 	transition: 0.4s;
 }
 
-
 .reglagesphotosa1
 {
 	width: 18.75rem;
@@ -784,7 +788,7 @@ li
 
 	body
 	{
-		width: 23.4rem;
+		width: auto;
 		height: auto;
 	}
 
