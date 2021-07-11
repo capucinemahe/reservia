@@ -20,6 +20,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 
 /* Header */
 
+
 #header
 {
 	display: flex;
@@ -31,55 +32,55 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 
 .logo
 {
-	display: flex;
 	height: 3.2rem;
 	width: 8.2rem;
 	margin-left: 1rem;
 	margin-top: 1rem;
 }
 
-.navigation
+.menu
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
-	width: 28rem;
-	padding-top: 2rem;
-}
+	justify-content: space-between;
+	width: 25rem;
+	padding-top: 0.5rem;
+	padding-right: 3rem;
+} 
 
-.navigation a
+.menu ul
 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 16rem;
 	font-size: 1rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-	/* width: 60%;*/
+	padding-top: 1rem;
+}	
+
+.hebergements
+{
+	padding-right: 3rem;
 }
 
 .hebergements:hover, .activites:hover
 {
-	border-top: solid 0.15rem rgb(6, 72, 250);
+	border-top: solid 0.2rem rgb(6, 72, 250);
 	padding-top: 2.5rem;
-	color: rgb(6, 72, 250);
 }
 
 .sinscrire
 {
 	font-size: 1rem;
 	font-weight: bold;
-	width: 30%;
 	color: rgb(6, 72, 250);
-	padding-right: 2rem;
-}
-
-.sinscrire:hover
-{
-	border-color: transparent;
+	padding-top: 2.35rem;
 }
 
 li
 {
 	list-style: none;
-}
+}	
 
 
 
@@ -87,6 +88,7 @@ li
 
 #research
 {
+	width: auto;
 	margin-left: 2%;
 }
 
@@ -133,19 +135,14 @@ li
 	color: black;
 	border-top: 0.1rem solid rgb(208, 208, 208);
 	border-bottom: 0.1rem solid rgb(208, 208, 208);
-	border-right: 0.15rem solid transparent;
-	border-left: 0.15rem solid transparent;
+	border-right: solid transparent;
+	border-left: solid transparent;
 	padding-left: 0.8rem;
 }
 
-.researchinput:placeholder
+.bouton
 {
-	color: black;
-}
-
-
-.button
-{
+	visibility: visible;
 	background-color: rgb(6, 72, 250);
 	border-radius: 0 0.625rem 0.625rem 0;
 	width: 7.8rem;
@@ -158,7 +155,12 @@ li
 	padding-top: 0.9rem;
 }
 
-.button i
+.motrechercher
+{
+	visibility: visible;
+}
+
+.bouton i
 {
 	visibility: hidden;
 }
@@ -182,7 +184,7 @@ li
 	margin-right: 2rem;
 }
 
-.filters div
+.vignettesfiltres div
 {
 	display: flex;
 	align-items: center;
@@ -213,7 +215,6 @@ li
 	width: 3rem;
 	margin-right: 0.8rem;
 }
-
 
 .informations
 {
@@ -329,7 +330,7 @@ li
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	font-size: 1em;
+	font-size: 1rem;
 	background: white;
 	border-radius: 0rem 0rem 1.56rem 1.56rem;
 	padding-left: 0.95rem;
@@ -341,24 +342,24 @@ li
 h3
 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .prix
 {
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .fa-star
 {
 	color: #0065fc;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 }
 
 .fa-star.grey
 {
 	color: rgb(207, 207, 207);
-	font-size: 0.8em;
+	font-size: 0.8rem;
 }
 
 .ligne2
@@ -393,9 +394,7 @@ h3
 .afficherplus
 {
 	font-size: 1.1em;
-	margin-bottom: 0.7rem;
-	margin-left: 1.25rem;
-	margin-top: 1.5rem;
+	margin: 2rem 0 0.7rem 1.25rem;
 }
 
 
@@ -427,7 +426,7 @@ h3
 .titrep
 {
 	color: black;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	margin-left: 0.3rem;
 	margin-top: 0.6rem;
 }
@@ -485,7 +484,7 @@ h3
 {
 	display: flex;
 	flex-direction: column;
-	font-size: 1em;
+	font-size: 1rem;
 	background: white;
 	border-radius: 0rem 0rem 1.7rem 1.7rem;
 	padding-left: 0.94rem;
@@ -494,7 +493,7 @@ h3
 .prix
 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
 	margin-top: -0.3rem;
 }
 
@@ -502,8 +501,7 @@ h3
 .fa-star
 {
 	color: #0065fc;
-	font-size: 0.8em;
-	padding-bottom: -0.625rem;
+	font-size: 0.8rem;
 }
 
 
@@ -524,9 +522,7 @@ h3
 .titreactivites
 {
 	font-size: 1.3em;
-	margin-left: 2.2rem;
-	margin-top: 3.76rem;
-	margin-bottom: -0.625rem;
+	margin: 3.75rem 0 -0.6rem 2.2rem;
 }
 
 
@@ -541,12 +537,12 @@ h3
 
 .vignettea1
 {
-	background: white;
-	border-radius: 1.25rem;
 	width: 18.75rem;
 	height: 28.125rem;
+	background: white;
+	border-radius: 1.25rem;
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
-	margin-top: 0.94rem;
+	margin: 0.94rem 0 0 0;
 }
 
 .vignettea1:hover
@@ -571,7 +567,7 @@ h3
 .titrea
 {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 	margin-left: 0.625rem;
 }
 
@@ -600,7 +596,7 @@ h3
 	height: 11.25rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .vignettea3
@@ -629,7 +625,7 @@ h3
 	height: 6.875rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .vignettea4
@@ -657,7 +653,7 @@ h3
 	height: 24.375rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
 
@@ -687,7 +683,7 @@ h3
 	height: 8.75rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
 .vignettea6
@@ -717,7 +713,7 @@ h3
 	height: 10rem;
 	object-fit: cover;
 	border-color: white;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	border-radius: 1.5rem 1.5rem 0 0;
 }
 
 
@@ -745,7 +741,7 @@ ul
 
 .apropos
 {
-	font-size: 1em;
+	font-size: 1rem;
 	padding: 3rem;
 	margin-top: -2rem;
 }
@@ -761,20 +757,15 @@ ul
 
 .assistance
 {
-	font-size: 1em;
+	font-size: 1rem;
 	padding: 3rem;
 	margin-left: 10rem;
 	margin-top: -2rem;
 }	
 
-.titref
+#blocfooter li
 {
-	font-size: 1.3em;
-}
-
-li
-{
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 2rem;
 }
 
@@ -788,97 +779,129 @@ li
 
 	body
 	{
-		width: auto;
+		width: 23.4rem;
 		height: auto;
 	}
 
 	/* HEADER */
 
-	#header :
+	#header
 	{
-		display: block;
 		width: 100%;
-		height: auto;
+		height: 8.2rem;
+		justify-content: flex-start;
 	}
 
 	.logo
 	{
-		height: 3rem;
-		width: 8rem;
-		margin-left: 0.7rem;
-		margin-top: 1rem;
+		height: 2rem;
+		width: 6rem;
+		margin-top: 0.8rem;
 	}
 
-	.navigation
+	.menu
 	{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		height: auto;
+		flex-direction: column;
+		width: 10rem;
+		height: 5rem;
 	}
 
-	.hebergements
-	{
-		order: 2;
-		padding: 1rem;
-	}
-
-	.activites
-	{
-		order: 3;
-	}
-	
 	.sinscrire
 	{
 		order: 1;
+		text-align: right;
+	}
+
+/*.menu ul
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 16rem;
+	font-size: 1rem;
+	padding-top: 1rem;
+	}	*/
+
+	.navigation
+	{
+		border-bottom: solid 0.2rem rgb(239, 239, 239);
+		order: 2;
+	}
+
+	.hebergements:hover, .activites:hover
+	{ 
+		border-top: 0;
+		border-bottom: solid 0.2rem rgb(6, 72, 250);
+		padding-bottom: 1rem;
 	}
 
 
 
 	/* Section 1 */
 
-#research
-{
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
+	#research
+	{
+		width: 100%;
+	}
 
 	.titre1
 	{
 		font-size: 1.4rem;
+		padding-right: 1.5rem;
+		width: 20rem;
 	}
 	.titre2
 	{
 		font-weight: 200;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		padding-top: 0.4rem;
 		padding-bottom: 1rem;
+		width: 20rem;
 	}
 
 	/* Recherche en fonction de la ville */
 
-	.researchinput
+	.researchcity
 	{
-		width: 12rem;
-		font-size: 1rem;
+		justify-content: flex-start;
+		width: 20rem;
 	}
 
-	.button
+	.researchcity i
+	{
+		padding: 1rem 1.2rem 1rem 1.2rem;
+	}
+
+	.researchinput
+	{
+		font-size: 1rem;
+		border-top: 0.1rem solid rgb(235, 235, 235);
+		border-bottom: 0.1rem solid rgb(235, 235, 235);;
+	}
+
+	.bouton
 	{
 		visibility: hidden;
 	}
 
-	.button i
+	.motrechercher
+	{
+		visibility: hidden;
+	}
+
+	.bouton i
 	{
 		visibility: visible;
 		background-color: rgb(6, 72, 250);
 		border-radius: 0 0.625rem 0.625rem 0;
+		width: 1rem;
+		height: 1rem;
 		color: white;
 		border-style: none;
 		cursor: pointer;
-		width: 1rem;
-		height: 1rem;
+		font-weight: bold;
+		margin-top: -18rem;
+		margin-left: -2rem;
 	}
 
 
@@ -886,7 +909,7 @@ li
 
 	.filters
 	{
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: flex-start;
 	}
 
@@ -895,10 +918,33 @@ li
 		font-size: 1.3rem;
 	}
 
+	.vignettesfiltres
+	{
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		width: 23.4rem;
+	}
+
+	.informations
+	{
+		padding-bottom: 1rem;
+	}
+
+	.iconei
+	{
+		height: 1rem;
+		width: 1rem;
+		padding: 0.3rem;
+	}
+
 	.dispos
 	{
-		font-size: 1.4em;
+		font-size: 1.2em;
 		font-weight: 200;
+		padding-right: 1.7rem;
 	}
 
 
@@ -907,18 +953,58 @@ li
 
 	.bloc-lespops
 	{
+		justify-content: flex-start;
 		width: 23.4rem;
 		height: 36.25rem;
 		order: 1;
-		padding: 2rem;
-		margin: 0;
+		padding: 1rem;
+		margin: -1rem;
 		border-radius: 0;
 	}
 
+	.titrepops
+	{
+		margin-top: -0.5rem;
+	}
+
+	.titrep
+	{
+		font-size: 1rem;
+		margin: 0.6rem 0 0.5rem 0.6rem;
+	}
+
+	.fa-chart-line
+	{
+		font-size: 1.4rem;
+		margin-bottom: 0.5rem;
+		padding-right: 2rem;
+	}
+
+	.colonne1
+	{
+		justify-content: flex-start;
+	}
+
+
 	.vignettepop
 	{
-		width: 23rem;
+		width: 22rem;
 		height: 9rem;
+		margin-top: 0.7rem;
+		margin-bottom: 0.5rem;
+	}
+
+
+	.prix
+	{
+		font-weight: 200;
+		font-size: 0.9rem;
+	}
+
+	.fa-star
+	{
+		color: #0065fc;
+		font-size: 0.8rem;
 	}
 
 
@@ -927,64 +1013,76 @@ li
 
 	#hebergements-et-pops
 	{
-		flex-wrap: wrap;
 		flex-direction: column;
 		height: auto;
-		width: 100%;
+		width: 23.4rem;
 		margin: 0;
 	}
 
 	.bloc-hebergements
 	{
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100%;
+		justify-content: flex-start;
+		width: 23.4rem;
 		height: auto;
-		padding: 0;
-		border-radius: 0;
 		background-color: white;
 		order: 2;
+		padding: 1rem;
+		margin: -1rem;
+		border-radius: 0;
 	}
 
 	.titrehebergements
 	{
-		margin-top: 2rem;
+
 	}
 
 	.ligne1
 	{
-		display: block;
-		margin-top: 0.625rem;
+		flex-direction: column;
 		margin: 0;
-		width: 100%;
-		height: auto;
 	}
 
 	.ligne2
 	{
-		display: block;
-		margin-top: 0.625rem;
-		width: 100%;
-		height: auto;
+		flex-direction: column;
+		margin: 0;
 	}
 
 	.vignettehebergement1, .vignettehebergement2
 	{
-		width: 20.9rem;
+		width: 20rem;
 		height: 12.5rem;
-		padding: 1rem;
+		margin-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		box-shadow: 0 0 1rem rgb(210, 210, 210);
 	}
 
 	.reglagesphotosh
 	{
-		width: 20rem;
-		height: 7.5rem;
+		width: 19.5rem;
+		height: 8rem;
 	}
 
-.afficherplus
-{
-	margin-bottom: 2rem;
-}
+	.souslaphoto
+	{
+		font-size: 0.9rem;
+		line-height: 0.8rem;
+	}
+
+	.fa-star
+	{
+		font-size: 0.68rem;
+	}
+
+	.fa-star.grey
+	{
+		font-size: 0.68rem;
+	}
+
+	.afficherplus
+	{
+		margin: 1.5rem 0 0 0.5rem;
+	}
 
 
 
@@ -993,21 +1091,21 @@ li
 	#activites
 	{
 		margin-top: 1rem;
+		margin-bottom: 2rem;
+		width: 23.5rem;
 		height: auto;
 	}
 
 	.titreactivites
 	{
-		margin: 1rem;
+	margin: 2rem 0 2rem 1rem;
 	}
 
 
 	.lignevignettes
 	{
 		flex-direction: column;
-		align-items: baseline;
-
-		width: 100%;
+		width: 23.4rem;
 		height: auto;
 		padding: 0;
 	}
@@ -1015,20 +1113,22 @@ li
 	.vignettea1, .vignettea2, .vignettea3, .vignettea4, .vignettea5, .vignettea6
 	{
 		width: 21rem;
-		height: 11.8rem;
-		margin-bottom: 1.3rem;
+		height: 11.4rem;
+		margin: 0 0 1rem 0;
+		box-shadow: 0 0 0.8rem rgb(210, 210, 210);
 	}
 
-.reglagesphotosa1, .reglagesphotosa2, .reglagesphotosa3, .reglagesphotosa4, .reglagesphotosa5, .reglagesphotosa6
+	.reglagesphotosa1, .reglagesphotosa2, .reglagesphotosa3, .reglagesphotosa4, .reglagesphotosa5, .reglagesphotosa6
+	{
+		width: 21rem;
+		height: 8rem;
+	}
+
+.titrea
 {
-	width: 20rem;
-	height: 8rem;
+	font-size: 0.9rem;
+	margin-left: 0.625rem;
 }
-
-
-
-
-
 
 
 	/* FOOTER */
@@ -1036,16 +1136,86 @@ li
 	#blocfooter
 	{
 		flex-direction: column;
-		width: 100%;
+		justify-content: flex-start;
+		width: 23.4rem;
 		height: auto;
 	}
+
+	.apropos
+	{
+		padding: 2rem 0 0 2rem;
+		margin: 0;
+	}
+
+	.noshebergements
+	{
+		
+		padding: 1rem 0 0 2rem;
+		margin: 0;
+	}
+
+	.assistance
+	{
+		padding: 1rem 0 0 2rem;
+		margin: 0;
+	}	
 
 
 }
 
 
 
-/* nouvelles règles si mon site est consulté sur un écran de tablette */
+/* nouvelles règles si mon site est consulté sur un écran de tablette max 768px */
+
+@media screen and (max-width: 768px) {
+
+	body
+	{
+		width: 48rem;
+		height: auto;
+	}
 
 
+	/* HEADER */
+
+	#header
+	{
+		width: 48rem;
+		height: 10rem;
+	}
+
+	.logo
+	{
+		height: 4rem;
+		width: 12rem;
+	}
+
+	.menu
+	{
+		width: 15rem;
+	} 
+
+
+
+	.menu ul
+	{
+		width: 8rem;
+	}	
+
+
+	/* Section 1 : Les recherches */
+
+	#research
+	{
+		width: 48rem;
+	}
+
+
+
+
+
+
+
+
+}
 
