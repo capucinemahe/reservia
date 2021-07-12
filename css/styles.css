@@ -26,7 +26,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;
+	width: 90rem;
 	height: 6rem;
 }
 
@@ -43,7 +43,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 25rem;
+	width: 26rem;
 	padding-top: 0.5rem;
 	padding-right: 3rem;
 } 
@@ -60,7 +60,12 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 
 .hebergements
 {
-	padding-right: 3rem;
+	padding: 0 1.5rem 0 1rem;
+}
+
+.activites
+{
+	padding: 0 2rem 0 2rem;
 }
 
 .hebergements:hover, .activites:hover
@@ -74,7 +79,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	font-size: 1rem;
 	font-weight: bold;
 	color: rgb(6, 72, 250);
-	padding-top: 2.35rem;
+	padding: 2rem 1rem 0 0;
 }
 
 li
@@ -142,7 +147,6 @@ li
 
 .bouton
 {
-	visibility: visible;
 	background-color: rgb(6, 72, 250);
 	border-radius: 0 0.625rem 0.625rem 0;
 	width: 7.8rem;
@@ -160,11 +164,10 @@ li
 	visibility: visible;
 }
 
-.bouton i
+.loupe
 {
 	visibility: hidden;
 }
-
 
 /* partie recherche en fonction de filtres */
 
@@ -173,6 +176,8 @@ li
 {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 	align-items: baseline;
 	align-content: center;
 	margin-top: 2rem;
@@ -184,10 +189,24 @@ li
 	margin-right: 2rem;
 }
 
+.vignettesfiltres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: center;
+}
+
+
+
 .vignettesfiltres div
 {
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
 	margin-right: 2rem;
 	margin-bottom: 1rem;
 	border: 0.1rem solid rgb(235, 235, 235);
@@ -198,7 +217,7 @@ li
 	font-size: 1rem;
 }
 
-.filters div:hover
+.vignettesfiltres div:hover
 {
 	background-color: rgb(235, 235, 235);
 }
@@ -206,6 +225,8 @@ li
 .filters i 
 {
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	justify-content: center;
 	color: rgb(6, 72, 250);
@@ -393,7 +414,7 @@ h3
 
 .afficherplus
 {
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	margin: 2rem 0 0.7rem 1.25rem;
 }
 
@@ -772,6 +793,35 @@ ul
 
 
 
+/* nouvelles règles si mon site est consulté sur un écran de tablette */
+
+@media screen and (max-width: 768px) and (min-width: 375px) {
+
+	body
+	{
+		width: 768px;
+		height: auto;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
 /* nouvelles règles si mon site est consulté sur un écran de smartphone */
 
@@ -779,7 +829,7 @@ ul
 
 	body
 	{
-		width: 23.4rem;
+		width: 375px;
 		height: auto;
 	}
 
@@ -787,45 +837,44 @@ ul
 
 	#header
 	{
+		flex-wrap: wrap;
 		width: 100%;
-		height: 8.2rem;
-		justify-content: flex-start;
+		height: 8rem;
 	}
 
 	.logo
 	{
-		height: 2rem;
-		width: 6rem;
-		margin-top: 0.8rem;
+		width: 8rem;
+		height: 3rem;
+		margin: 0;
 	}
 
 	.menu
 	{
-		flex-direction: column;
+		flex-direction: column-reverse;
+		justify-content: space-between;
 		width: 10rem;
-		height: 5rem;
+		height: 4rem;
+		padding: 0;
+	} 
+
+	.menu ul
+	{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 12rem;
+		padding: 0 0 0 1rem;
+		margin-left: -5rem;
+	}	
+
+	.hebergements
+	{
+		padding: 0;
 	}
 
-	.sinscrire
+	.activites
 	{
-		order: 1;
-		text-align: right;
-	}
-
-/*.menu ul
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 16rem;
-	font-size: 1rem;
-	padding-top: 1rem;
-	}	*/
-
-	.navigation
-	{
-		border-bottom: solid 0.2rem rgb(239, 239, 239);
-		order: 2;
+		padding: 0;
 	}
 
 	.hebergements:hover, .activites:hover
@@ -834,6 +883,13 @@ ul
 		border-bottom: solid 0.2rem rgb(6, 72, 250);
 		padding-bottom: 1rem;
 	}
+
+
+	.sinscrire
+	{
+	
+	}
+
 
 
 
@@ -863,7 +919,6 @@ ul
 
 	.researchcity
 	{
-		justify-content: flex-start;
 		width: 20rem;
 	}
 
@@ -881,7 +936,8 @@ ul
 
 	.bouton
 	{
-		visibility: hidden;
+		width: 3rem;
+		height: 3rem;
 	}
 
 	.motrechercher
@@ -889,28 +945,21 @@ ul
 		visibility: hidden;
 	}
 
-	.bouton i
+	.loupe
 	{
-		visibility: visible;
-		background-color: rgb(6, 72, 250);
-		border-radius: 0 0.625rem 0.625rem 0;
-		width: 1rem;
-		height: 1rem;
 		color: white;
-		border-style: none;
 		cursor: pointer;
 		font-weight: bold;
-		margin-top: -18rem;
-		margin-left: -2rem;
 	}
-
 
 	/* partie recherche en fonction de filtres */
 
 	.filters
 	{
 		flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: flex-start;
+		margin: 0;
 	}
 
 	.titrefilters
@@ -920,13 +969,11 @@ ul
 
 	.vignettesfiltres
 	{
-
-		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
-		align-content: flex-start;
-		width: 23.4rem;
+		justify-content: flex-start;
 	}
+
+
 
 	.informations
 	{
@@ -954,11 +1001,11 @@ ul
 	.bloc-lespops
 	{
 		justify-content: flex-start;
-		width: 23.4rem;
+		width: 100%;
 		height: 36.25rem;
 		order: 1;
-		padding: 1rem;
-		margin: -1rem;
+		padding: 0 0 0 0.5rem;
+		margin: 0;
 		border-radius: 0;
 	}
 
@@ -1014,26 +1061,25 @@ ul
 	#hebergements-et-pops
 	{
 		flex-direction: column;
+		width: 100%;
 		height: auto;
-		width: 23.4rem;
 		margin: 0;
 	}
 
 	.bloc-hebergements
 	{
 		justify-content: flex-start;
-		width: 23.4rem;
+		width: 100%;
 		height: auto;
 		background-color: white;
 		order: 2;
-		padding: 1rem;
-		margin: -1rem;
 		border-radius: 0;
+		padding: 0 0 0 0.5rem;
 	}
 
 	.titrehebergements
 	{
-
+		margin: 2rem 0 0 1rem;
 	}
 
 	.ligne1
@@ -1081,6 +1127,7 @@ ul
 
 	.afficherplus
 	{
+		font-size: 1rem;
 		margin: 1.5rem 0 0 0.5rem;
 	}
 
@@ -1090,22 +1137,21 @@ ul
 
 	#activites
 	{
-		margin-top: 1rem;
-		margin-bottom: 2rem;
-		width: 23.5rem;
+		margin: 1rem 0 1.5rem 0.5rem;
+		width: 100%;
 		height: auto;
 	}
 
 	.titreactivites
 	{
-	margin: 2rem 0 2rem 1rem;
+		margin: 2rem 0 2rem 0.8rem;
 	}
 
 
 	.lignevignettes
 	{
 		flex-direction: column;
-		width: 23.4rem;
+		width: 100%;
 		height: auto;
 		padding: 0;
 	}
@@ -1124,11 +1170,11 @@ ul
 		height: 8rem;
 	}
 
-.titrea
-{
-	font-size: 0.9rem;
-	margin-left: 0.625rem;
-}
+	.titrea
+	{
+		font-size: 0.9rem;
+		margin-left: 0.625rem;
+	}
 
 
 	/* FOOTER */
@@ -1149,7 +1195,7 @@ ul
 
 	.noshebergements
 	{
-		
+
 		padding: 1rem 0 0 2rem;
 		margin: 0;
 	}
@@ -1162,60 +1208,3 @@ ul
 
 
 }
-
-
-
-/* nouvelles règles si mon site est consulté sur un écran de tablette max 768px */
-
-@media screen and (max-width: 768px) {
-
-	body
-	{
-		width: 48rem;
-		height: auto;
-	}
-
-
-	/* HEADER */
-
-	#header
-	{
-		width: 48rem;
-		height: 10rem;
-	}
-
-	.logo
-	{
-		height: 4rem;
-		width: 12rem;
-	}
-
-	.menu
-	{
-		width: 15rem;
-	} 
-
-
-
-	.menu ul
-	{
-		width: 8rem;
-	}	
-
-
-	/* Section 1 : Les recherches */
-
-	#research
-	{
-		width: 48rem;
-	}
-
-
-
-
-
-
-
-
-}
-
