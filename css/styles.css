@@ -243,7 +243,7 @@ li
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 }
 
 .iconei
@@ -265,7 +265,7 @@ li
 
 .dispos
 {
-	font-size: 1em;
+	font-size: 1rem;
 	margin-left: 0.8rem;
 }
 
@@ -392,7 +392,6 @@ h3
 	margin-top: 1.25rem;
 }
 
-
 .vignettehebergement2
 {
 	background: white;
@@ -499,7 +498,6 @@ h3
 	border-color: white;
 	border-radius: 1.5rem 0rem 0rem 1.5rem;
 }
-
 
 .acotedelaphoto
 {
@@ -769,11 +767,10 @@ ul
 
 .noshebergements
 {
-	font-size: 1em;
+	font-size: 1rem;
 	padding: 3rem;
 	margin-left: 7.8rem;
 	margin-top: -2rem;
-
 }
 
 .assistance
@@ -795,7 +792,7 @@ ul
 
 /* nouvelles règles si mon site est consulté sur un écran de tablette */
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 768px) and (min-width: 376px) {
 
 	body
 	{
@@ -804,17 +801,334 @@ ul
 	}
 
 
+/* Header */
+
+
+#header
+{
+	width: 100%;
+	height: 8rem;
+}
+
+.logo
+{
+	height: 4rem;
+	width: 9rem;
+	margin: 0;
+}
+
+.menu
+{
+	width: 20rem;
+	padding: 0;
+} 
+
+.menu ul
+{
+	width: 12rem;
+	font-size: 1rem;
+	padding: 0;
+}	
+
+.hebergements
+{
+	padding: 0;
+}
+
+.activites
+{
+	padding: 0;
+}
+
+.sinscrire
+{
+	padding: 0;
+}
+
+/* Section 1 : Les recherches */
+
+#research
+{
+	width: 48rem;
+}
+
+/* partie recherche en fonction de la ville */
+
+.researchcity
+{
+	width: 35rem;
+}
+
+/* partie recherche en fonction de filtres */
+
+
+.filters
+{
+	flex-wrap: wrap;
+}
+
+.titrefilters
+{
+
+}
+
+.vignettesfiltres
+{
+ width: 30rem;
+ 	flex-wrap: wrap;
+}
+
+.vignettesfiltres div
+{
+
+}
+
+.informations
+{
+	font-size: 1rem;
+	padding-bottom: 2rem;
+}
+
+.dispos
+{
+	font-size: 1rem;
+}
+
+/* Section 2 : Hébergements à Marseille */
+
+#hebergements-et-pops
+{
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.bloc-hebergements
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 48rem;
+	height: auto;
+	padding: 0 1rem 0 1rem;
+	border-radius: 0;
+}
+
+
+.titrehebergements
+{
+	padding-top: 1rem;
+}
+
+.ligne1
+{
+	padding: 0.5rem;
+}
+
+.vignettehebergement1
+{
+	width: 13rem;
+	height: 10rem;
+}
+
+.reglagesphotosh
+{
+	width: 12.4rem;
+	height: 7.5rem;
+}
+
+h3
+{
+	font-size: 0.9rem;
+}
+
+.ligne2
+{
+	padding: 0.5rem;
+	margin: 4rem 0 4rem 0;
+}
+
+.vignettehebergement2
+{
+	width: 13rem;
+	height: 10rem; 
+}
+
+.afficherplus
+{
+	margin: 2rem 0 2rem 1rem;
+}
+
+
+/* Les plus populaires */
+
+.bloc-lespops
+{
+	width: 100%;
+	height: auto;
+	padding: 2rem 0 0 2rem;
+	margin: 0;
+	border-radius: 0;
+	background-color: white;
+}
+
+
+.titrepops
+{
+	justify-content: flex-start;
+}
+
+.titrep
+{
+}
+
+.fa-chart-line
+{
+	margin-left: 15rem;
+}
+
+.colonne1
+{
+margin: 0;
+}
+
+.vignettepop
+{
+	width: 30rem;
+	height: 12rem;
+	margin: 1.5rem 0 1rem 0;
+}
+
+.reglagesphotosp
+{
+	width: 16rem;
+	height: 11.3rem;
+}
+
+
+.acotedelaphoto
+{
+	font-size: 1.2rem;
+	padding-left: 1rem;
+	line-height: 1.5rem;
+}
+
+.prix
+{
+	margin-top: 0;
+}
+
+
+/* Section 3 : Activités à Marseille */
+
+
+#activites
+{
+	width: 100%;
+	height: auto;
+	margin-top: 2rem;
+}
+
+.titreactivites
+{
+
+}
+
+
+.lignevignettes
+{
+	flex-wrap: wrap;
+	width: 48rem;
+	padding: 2rem;
+}
+
+.colonne1
+{
+	padding: 0 0 1rem 0;
+}
+
+.colonne2
+{
+	padding: 1rem 0 1rem 0;
+}
+
+.vignettea1
+{
+
+}
+
+.vignettea2
+{
+	 
+}
+
+.vignettea3
+{
+
+}
+
+.colonne3
+{
+	padding: 1rem 0 1rem 0;
+}
+
+.vignettea4
+{
+	 
+}
+
+.colonne4
+{
+	padding: 1rem 0 1rem 0;
+}
+
+.vignettea5
+{
+}
+
+.vignettea6
+{
+
+}
 
 
 
+/* FOOTER */
 
 
+#blocfooter
+{
+	width: 100%;
+	height: 15rem;
+}
 
+.apropos
+{
+	font-size: 0.9rem;
+	padding: 2rem;
+	margin: 0;
+}
 
+.noshebergements
+{
+	font-size: 0.9rem;
+	padding-top: 4rem;
+	margin-left: 2rem;
+}
 
+.assistance
+{
+	font-size: 0.9rem;
+	padding-top: 4rem;
+	margin-left: 2rem;
+}	
 
-
-
+#blocfooter li
+{
+	font-size: 0.85rem;
+	line-height: 2rem;
+}
 
 }
 
@@ -829,7 +1143,7 @@ ul
 
 	body
 	{
-		width: 375px;
+		width: 23.43rem;
 		height: auto;
 	}
 
@@ -837,8 +1151,8 @@ ul
 
 	#header
 	{
-		flex-wrap: wrap;
-		width: 100%;
+		flex-direction: column;
+		width: 23.43rem;
 		height: 8rem;
 	}
 
@@ -851,20 +1165,20 @@ ul
 
 	.menu
 	{
-		flex-direction: column-reverse;
-		justify-content: space-between;
-		width: 10rem;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		width: auto;
 		height: 4rem;
 		padding: 0;
 	} 
 
 	.menu ul
 	{
-		flex-direction: row;
-		justify-content: space-between;
-		width: 12rem;
-		padding: 0 0 0 1rem;
-		margin-left: -5rem;
+		justify-content: space-evenly;
+		width: 23.43rem;
+		padding: 0;
+		margin: 0;
+		order: 2;
 	}	
 
 	.hebergements
@@ -887,7 +1201,8 @@ ul
 
 	.sinscrire
 	{
-	
+	order: 1;
+	padding: 0;
 	}
 
 
@@ -1004,7 +1319,7 @@ ul
 		width: 100%;
 		height: 36.25rem;
 		order: 1;
-		padding: 0 0 0 0.5rem;
+		padding: 0 0 0 1rem;
 		margin: 0;
 		border-radius: 0;
 	}
@@ -1064,6 +1379,7 @@ ul
 		width: 100%;
 		height: auto;
 		margin: 0;
+		padding: 0;
 	}
 
 	.bloc-hebergements
@@ -1074,7 +1390,7 @@ ul
 		background-color: white;
 		order: 2;
 		border-radius: 0;
-		padding: 0 0 0 0.5rem;
+		padding: 0 0 0 1rem;
 	}
 
 	.titrehebergements
@@ -1137,7 +1453,7 @@ ul
 
 	#activites
 	{
-		margin: 1rem 0 1.5rem 0.5rem;
+		margin: 1rem 0 1.5rem 1rem;
 		width: 100%;
 		height: auto;
 	}
