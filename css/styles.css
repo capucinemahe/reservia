@@ -17,7 +17,6 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 
 /* Header */
 
-
 #header
 {
 	display: flex;
@@ -35,7 +34,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	margin: 1rem 0 0 1rem;
 }
 
-.menu
+.menu /*menu de navigation du header*/
 {
 	display: flex;
 	flex-direction: row;
@@ -44,7 +43,7 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	padding: 0.5rem 3rem 0 0;
 } 
 
-.menu ul
+.menu ul /*menu de navigation avec Hébergements et Activités*/
 {
 	display: flex;
 	flex-direction: row;
@@ -64,9 +63,9 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 	padding: 0 2rem 0 2rem;
 }
 
-.hebergements:hover, .activites:hover
+.hebergements:hover, .activites:hover /*effet sur ces 2 éléments*/
 {
-	border-top: solid 0.2rem rgb(6, 72, 250);
+	border-top: solid 0.2rem #0065FC;
 	padding-top: 2.5rem;
 }
 
@@ -74,11 +73,11 @@ a  /* supprime le soulignement et la couleur violette des textes cliquables */
 {
 	font-size: 1rem;
 	font-weight: bold;
-	color: rgb(6, 72, 250);
+	color: #0065FC;
 	padding: 2rem 1rem 0 0;
 }
 
-li
+li /*pour supprimer les puces*/
 {
 	list-style: none;
 }	
@@ -109,7 +108,7 @@ li
 
 /* partie recherche en fonction de la ville */
 
-.researchcity
+.researchcity /*concerne la barre de recherche par ville en entière*/
 {
 	display: flex;
 	flex-direction: row;
@@ -117,9 +116,9 @@ li
 	width: 28rem;
 }
 
-.researchcity i
+.researchcity i /*cartouche avec icone map*/
 {
-	background-color: rgb(235, 235, 235);
+	background-color: #F2F2F2;
 	border-radius: 0.625rem 0 0 0.625rem;
 	border-style: none;
 	cursor: pointer;
@@ -127,21 +126,22 @@ li
 	text-align: center;
 }
 
-.researchinput
+.researchinput /*zone d'écriture de la ville recherchée*/
 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
+	font-size: 0.8rem;
 	color: black;
-	border-top: 0.1rem solid rgb(208, 208, 208);
-	border-bottom: 0.1rem solid rgb(208, 208, 208);
+	border-top: 0.1rem solid #F2F2F2;
+	border-bottom: 0.1rem solid #F2F2F2;
 	border-right: solid transparent;
 	border-left: solid transparent;
 	padding-left: 0.8rem;
 }
 
-.bouton
+.bouton /*bouton bleu*/
 {
-	background-color: rgb(6, 72, 250);
+	background-color: #0065FC;
 	border-radius: 0 0.625rem 0.625rem 0;
 	width: 7.8rem;
 	height: 3rem;
@@ -151,16 +151,17 @@ li
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	padding-top: 0.9rem;
+	font-size: 0.8rem;
 }
 
-.bouton i
+.bouton i /*loupe sur bouton bleu - dispo sur la version mobile seulement*/
 {
 	visibility: hidden;
 }
 
-/* partie recherche en fonction de filtres */
+/* partie recherche en fonction des filtres */
 
-.filters
+.filters /*concerne la partie globale des filtres*/
 {
 	display: flex;
 	flex-direction: row;
@@ -177,7 +178,7 @@ li
 	margin-right: 2rem;
 }
 
-.vignettesfiltres
+.vignettesfiltres /*cartouche entier d'un filtre*/
 {
 	display: flex;
 	flex-direction: row;
@@ -187,7 +188,7 @@ li
 	align-content: center;
 }
 
-.vignettesfiltres div
+.vignettesfiltres div /* design du cartouche*/
 {
 	display: flex;
 	flex-direction: row;
@@ -195,7 +196,7 @@ li
 	align-items: baseline;
 	margin-right: 2rem;
 	margin-bottom: 1rem;
-	border: 0.1rem solid rgb(235, 235, 235);
+	border: 0.1rem solid #F2F2F2;
 	border-radius: 2rem;
 	cursor: pointer;
 	font-weight: bold;
@@ -203,27 +204,27 @@ li
 	font-size: 1rem;
 }
 
-.vignettesfiltres div:hover
+.vignettesfiltres div:hover /*effet fond gris sur le cartouche*/
 {
-	background-color: rgb(235, 235, 235);
+	background-color: #F2F2F2;
 }
 
-.filters i 
+.filters i /*icone ronde du filtre*/
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	justify-content: center;
-	color: rgb(6, 72, 250);
-	background-color: rgb(215, 229, 254);
+	color: #0065FC;
+	background-color: #DEEBFF;
 	border-radius: 100%;
 	height: 3rem;
 	width: 3rem;
 	margin-right: 0.8rem;
 }
 
-.informations
+.informations /*ligne avec le i entouré + texte*/
 {
 	display: flex;
 	flex-direction: row;
@@ -232,24 +233,20 @@ li
 	font-size: 0.8rem;
 }
 
-.iconei
+.informations i /*icone i*/
 {
+	color: #0065FC;
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 1.6rem;
 	width: 1.6rem;
-	border: solid 0.1rem rgb(212, 212, 212);
+	border: solid 0.1rem #F2F2F2;
 	border-radius: 100%;
 }
 
-.informations i
-{
-	color: rgb(6, 72, 250);
-	cursor: pointer;
-}
-
-.dispos
+.dispos /*texte après icone i*/
 {
 	font-size: 1rem;
 	margin-left: 0.8rem;
@@ -258,7 +255,7 @@ li
 
 /* Section 2 : Hébergements à Marseille */
 
-#hebergements-et-pops
+#hebergements-et-pops /*section avec les Hébergements + les plus populaires*/
 {
 	display: flex;
 	flex-direction: row;
@@ -268,7 +265,7 @@ li
 	margin: 1rem 1rem 0 1rem;
 }
 
-.bloc-hebergements
+.bloc-hebergements 
 {
 	display: flex;
 	flex-direction: column;
@@ -277,7 +274,7 @@ li
 	height: 39rem;
 	padding: 1.875rem;
 	border-radius: 1.25rem;
-	background-color: rgb(239, 239, 239);
+	background-color: #F2F2F2;
 }
 
 .titrehebergements
@@ -286,7 +283,7 @@ li
 	margin: 0.6rem 0 0 1rem;
 }
 
-.ligne1
+.ligne1 /*première ligne du bloc Hébergements*/
 {
 	display: flex;
 	flex-direction: row;
@@ -294,16 +291,16 @@ li
 	margin: 0.625rem 0 2rem 0;
 }
 
-.vignettehebergement1
+.vignettehebergement /*même chose pour toutes les vignettes de ce bloc*/
 {
 	background: white;
 	border-radius: 1.25rem;
-	width: 15.625rem;
+	width: 15.5rem;
 	height: 12.5rem;
-	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
+	box-shadow: 0.3rem 0.3rem 0.3rem #F2F2F2; 
 }
 
-.vignettehebergement1:hover
+.vignettehebergement:hover /*effet sur les vignettes du bloc Hébergements*/
 {
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
@@ -313,7 +310,7 @@ li
 	transition: 0.4s;
 }
 
-.reglagesphotosh
+.reglagesphotosh /*paramètres des photos des vignettes du bloc hébergements*/
 {
 	width: 15rem;
 	height: 7.5rem;
@@ -324,7 +321,7 @@ li
 	border-radius: 1.56rem 1.56rem 0rem 0rem;
 }
 
-.souslaphoto
+.souslaphoto /*partie sous les images*/
 {
 	display: flex;
 	flex-direction: column;
@@ -337,7 +334,7 @@ li
 	margin-top: -0.8rem;
 }
 
-h3
+h3 /*noms des hotels*/
 {
 	font-weight: bold;
 	font-size: 1rem;
@@ -348,7 +345,7 @@ h3
 	font-size: 1rem;
 }
 
-.fa-star
+.fa-star /*étoiles de notation des hébergements*/
 {
 	color: #0065fc;
 	font-size: 0.8rem;
@@ -360,31 +357,12 @@ h3
 	font-size: 0.8rem;
 }
 
-.ligne2
+.ligne2 /*2ele ligne de vignettes du bloc hébergements*/
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 1.25rem 0 1.25rem 0;
-}
-
-.vignettehebergement2
-{
-	background: white;
-	border-radius: 1.25rem;
-	width: 15.5rem;
-	height: 12.5rem;
-	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
-}
-
-.vignettehebergement2:hover
-{
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-	-webkit-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
 }
 
 .afficherplus
@@ -396,7 +374,7 @@ h3
 
 /* Les plus populaires */
 
-.bloc-lespops
+.bloc-lespops /*bloc des logements les plus populaires*/
 {
 	display: flex;
 	flex-direction: column;
@@ -405,10 +383,10 @@ h3
 	padding: 1.9rem;
 	margin-left: 1.5rem;
 	border-radius: 1.25rem;
-	background-color: rgb(239, 239, 239);
+	background-color: #F2F2F2;
 }
 
-.titrepops
+.titrepops /*bloc titre texte + icone*/
 {
 	display: flex;
 	flex-direction: row;
@@ -417,7 +395,7 @@ h3
 	margin-top: -1.25rem;
 }
 
-.titrep
+.titrep /*texte à gauche*/
 {
 	color: black;
 	font-size: 0.9rem;
@@ -430,7 +408,7 @@ h3
 	font-size: 1.3em;
 }
 
-.colonne1p
+.colonnep /*colonne des 3 populaires*/
 {
 	display: flex;
 	flex-direction: column;
@@ -449,7 +427,7 @@ h3
 	margin: 1.7rem 0 1.7rem 0;
 }
 
-.vignettepop:hover
+.vignettepop:hover /*effet sur les vignettes du bloc populaires*/
 {
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
@@ -471,7 +449,7 @@ h3
 	border-radius: 1.5rem 0rem 0rem 1.5rem;
 }
 
-.acotedelaphoto
+.acotedelaphoto /*texte de la vignette*/
 {
 	display: flex;
 	flex-direction: column;
@@ -514,7 +492,7 @@ h3
 	margin: 3.75rem 0 -0.6rem 2.2rem;
 }
 
-.lignevignettes
+.lignevignettes /*bloc ligne des 6 vignettes*/
 {
 	display: flex;
 	flex-direction: row;
@@ -522,14 +500,14 @@ h3
 	padding: 1.875rem;
 }
 
-.vignettea1
+.vignettea1 /*vignette activités numéro 1*/
 {
 	width: 18.75rem;
 	height: 28.125rem;
 	background: white;
 	border-radius: 1.25rem;
 	box-shadow: 0.3rem 0.3rem 0.3rem rgb(230, 230, 230); 
-	margin: 0.94rem 0 0 0;
+	margin: 0;
 }
 
 .vignettea1:hover
@@ -551,7 +529,7 @@ h3
 	border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
-.titrea
+.titrea /*style des titres des 6 vignettes*/
 {
 	font-weight: bold;
 	font-size: 1rem;
@@ -709,7 +687,7 @@ h3
 	justify-content: flex-start;
 	width: 100%;
 	height: 13.75rem;
-	background-color: rgb(239, 239, 239);
+	background-color: #F2F2F2;
 }
 
 ul
@@ -864,7 +842,7 @@ ul
 		margin: 1rem 0 2rem 0;
 	}
 
-	.vignettehebergement1
+	.vignettehebergement
 	{
 		width: 13rem;
 		height: 10rem;
@@ -905,7 +883,7 @@ ul
 	{
 		width: 100%;
 		height: auto;
-		padding: 1rem 0 0 2rem;
+		padding: 1rem 0 0 1rem;
 		margin: 0;
 		border-radius: 0;
 		background-color: white;
@@ -927,7 +905,7 @@ ul
 		margin-left: 14rem;
 	}
 
-	.colonne1p
+	.colonnep
 	{
 		margin-left: 5rem;
 	}
@@ -1016,6 +994,7 @@ ul
 	{
 		width: 100%;
 		height: 13rem;
+		padding: 1rem 0 0 1rem;
 	}
 
 	.apropos
@@ -1091,19 +1070,19 @@ ul
 	.hebergements
 	{
 		padding: 0 3rem 1.3rem 2rem;
-		border-bottom: solid 0.2rem rgb(230, 230, 230);
+		border-bottom: solid 0.2rem #F2F2F2;
 	}
 
 	.activites
 	{
 		padding: 0 5rem 1.3rem 3.5rem;
-		border-bottom: solid 0.2rem rgb(230, 230, 230);
+		border-bottom: solid 0.2rem #F2F2F2;
 	}
 
 	.hebergements:hover, .activites:hover
 	{ 
 		border-top: 0;
-		border-bottom: solid 0.2rem rgb(6, 72, 250);
+		border-bottom: solid 0.2rem #0065FC;
 		padding-bottom: 1.3rem;
 	}
 
@@ -1156,8 +1135,8 @@ ul
 	.researchinput
 	{
 		font-size: 1rem;
-		border-top: 0.1rem solid rgb(235, 235, 235);
-		border-bottom: 0.1rem solid rgb(235, 235, 235);;
+		border-top: 0.1rem solid #F2F2F2;
+		border-bottom: 0.1rem solid #F2F2F2;
 	}
 
 	.bouton
@@ -1176,7 +1155,7 @@ ul
 		cursor: pointer;
 		font-weight: bold;
 		border-style: none;
-		background-color: rgb(6, 72, 250);
+		background-color: #0065FC;
 		border-radius: 0 0.625rem 0.625rem 0;
 	}
 
@@ -1236,7 +1215,7 @@ ul
 		width: 100%;
 		height: 36.25rem;
 		order: 1;
-		padding: 0 1rem 0 2rem;
+		padding: 0 1rem 0 1rem;
 		margin: 0;
 		border-radius: 0;
 	}
@@ -1259,7 +1238,7 @@ ul
 		padding-right: 2rem;
 	}
 
-	.colonne1
+	.colonnep
 	{
 		justify-content: flex-start;
 	}
@@ -1326,7 +1305,7 @@ ul
 		margin: 0;
 	}
 
-	.vignettehebergement1, .vignettehebergement2
+	.vignettehebergement
 	{
 		width: 20rem;
 		height: 12.5rem;
@@ -1414,8 +1393,9 @@ ul
 	{
 		flex-direction: column;
 		justify-content: flex-start;
-		width: 23.4rem;
+		width: 100%;
 		height: auto;
+		padding: 0 1rem 0 1rem;
 	}
 
 	.apropos
